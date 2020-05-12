@@ -1,9 +1,15 @@
 'use strict';
 {
-   
+//    属性の操作
 
 document.querySelector('button').addEventListener('click',() =>{
-    document.getElementById('target').textContent = 'Changed!';
-} );
-    
+
+    const targetNode = document.getElementById('target');
+    targetNode.textContent = 'Changed!';
+    targetNode.title = 'this is title!';
+    targetNode.style.backgroundColor = "red";
+});
+
+
+
 }
