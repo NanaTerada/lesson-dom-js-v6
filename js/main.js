@@ -5,9 +5,15 @@
 document.querySelector('button').addEventListener('click',() =>{
 
     const targetNode = document.getElementById('target');
-    targetNode.textContent = 'Changed!';
-    targetNode.title = 'this is title!';
-    targetNode.style.backgroundColor = "red";
+
+    targetNode.className = 'my-color my-border'; 　//最初からついていたクラスも書かないきえてしまう
+
+
+    // targetNode.textContent = 'Changed!';
+    // targetNode.title = 'this is title!';
+    // targetNode.style.backgroundColor = "red";
+
+
 });
 
 
