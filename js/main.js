@@ -1,16 +1,23 @@
 'use strict';
 {
-    document.querySelector('button').addEventListener( 'dblclick' , () => {
-        console.log('Double Click!');
+    const text = document.querySelector('textarea');
+
+    // text.addEventListener('focus' ,() => {
+    //     console.log('focus');
+    // });
+
+    // text.addEventListener('blur' ,() => {
+    //     console.log('blur');
+    // });
+
+    text.addEventListener('input' ,() => {
+        console.log(text.value.length);
+    });
+    
+    text.addEventListener('change' ,() => {
+    console.log('change');
     });
 
-    // document.addEventListener('mousemove', (e) => {
-    //     console.log(e.clientX,e.clientY); //XY座標を取得
-    // })
-    // キーボードに関するイベント keydown と.key　を使う
-    document.addEventListener('keydown', (e) => {
-        console.log(e.key); 
-    })
 
 
 }
