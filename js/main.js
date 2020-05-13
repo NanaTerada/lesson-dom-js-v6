@@ -1,10 +1,7 @@
 'use strict';
 {
-    document.querySelector('ul').addEventListener('click',(e) => {
-        if(e.target.nodeName === 'LI') {
-            e.target.classList.toggle('done');
-        }
+    document.querySelector('form').addEventListener( 'submit',(e) =>{
+        e.preventDefault(); //規定の動作をキャンセル
+        console.log('Submit!');
     });
-   
-
 }
