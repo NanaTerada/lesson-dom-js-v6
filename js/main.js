@@ -1,14 +1,13 @@
 'use strict';
 {
-//    属性の操作
+// ＤＯＭから要素を削除しよう！
 
 document.querySelector('button').addEventListener('click',() =>{
+    const item1 = document.querySelectorAll('li')[1];
+    // item1.remove();//　一部のブラウザで使えない場合あり、その場合は↓
+    // 親Node.removeChild(削除するNode)
+    document.querySelector('ul').removeChild(item1);
 
-const item0 = document.querySelectorAll('li')[0];　//コピーしたい要素を取得
-const copy = item0.cloneNode(true); //コピーする
-const ul = document.querySelector('ul');
-const item2 = document.querySelectorAll('li')[2];
-ul.insertBefore(copy,item2); //コピーをitem2の前に挿入してね
 
 });
 
