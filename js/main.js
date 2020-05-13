@@ -4,21 +4,11 @@
 
 document.querySelector('button').addEventListener('click',() =>{
 
-    const item2 = document.createElement('li');　//liの要素をつくる
-    item2.textContent = 'item 2'; //中身のテキスト
-
-    // DOMツリーに追加
-
-    // const ulNode = document.querySelector('ul'); //親要素であるｕｌを取得
-    const ul = document.querySelector('ul');
-    ul.appendChild(item2);
-
-
-
-    
-
-  
-
+const item0 = document.querySelectorAll('li')[0];　//コピーしたい要素を取得
+const copy = item0.cloneNode(true); //コピーする
+const ul = document.querySelector('ul');
+const item2 = document.querySelectorAll('li')[2];
+ul.insertBefore(copy,item2); //コピーをitem2の前に挿入してね
 
 });
 
